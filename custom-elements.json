@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/components/card/card.component.ts",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "MyCard",
+          "slots": [
+            {
+              "description": "The card's main content",
+              "name": ""
+            }
+          ],
+          "members": [
+            {
+              "kind": "field",
+              "name": "noBorder",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "noBorder"
+            },
+            {
+              "kind": "field",
+              "name": "noPadding",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "noPadding"
+            },
+            {
+              "kind": "field",
+              "name": "stretch",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "stretch"
+            }
+          ],
+          "attributes": [
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "If true, removes border",
+              "name": "no-border"
+            },
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "If true, removes padding",
+              "name": "no-padding"
+            },
+            {
+              "type": {
+                "text": "boolean"
+              },
+              "description": "If true, the Card fills the parent element height",
+              "name": "stretch",
+              "default": "false",
+              "fieldName": "stretch"
+            },
+            {
+              "name": "noBorder",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "noBorder"
+            },
+            {
+              "name": "noPadding",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "noPadding"
+            }
+          ],
+          "superclass": {
+            "name": "BaseElement",
+            "module": "/src/internal/base-element"
+          },
+          "tagName": "my-card",
+          "summary": "The `<my-card>` can be used to group related subjects in a container",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "MyCard",
+          "declaration": {
+            "name": "MyCard",
+            "module": "src/components/card/card.component.ts"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/components/card/card.ts",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "*",
+          "declaration": {
+            "name": "*",
+            "package": "\"./card.component.js\""
+          }
+        },
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "name": "MyCard",
+            "module": "src/components/card/card.ts"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore dependencies
+/node_modules
+/bower_components
+
+# Ignore build artifacts
+/build
+/dist
+
+# Ignore IDE and editor files
+/.vscode
+/.idea
+
+# Ignore logs and temporary files
+/logs
+/tmp
+
+# Ignore sensitive or environment-specific information
+.env
+.env.local
+.env.*.local
+.env.test
+.env.production
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
